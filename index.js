@@ -28,7 +28,7 @@ app.get('/',(req,res)=>{
 
 app.post('/',(req,res)=>{
     var query = req.body.cityName;
-    const apiKey = "2f4ff75fc4f62bb3c565eee503b173cf";
+    const apiKey = "YOUR API KEY";
     var unit = "metric";
     const url = "https://api.openweathermap.org/data/2.5/weather?q="+query+"&appid="+apiKey+"&units="+unit;
 
@@ -68,6 +68,8 @@ app.listen(3000,()=>{
 
 
 // 401 unauthorized auntheication
+
+// npm install body-parser
 // 404 not found 
 // 200 ok status code
 // 402 
@@ -75,5 +77,3 @@ app.listen(3000,()=>{
 
 
 
-
-// npm install body-parser
